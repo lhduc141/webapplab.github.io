@@ -1,0 +1,818 @@
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.body, html{
+    background-color: #020617;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+.container{
+    padding: 0px 7%;
+}
+a {
+   cursor: pointer; 
+}
+
+/* Main Page ------------------------------------------------------------------------ */
+/* Header */
+header{
+    margin: 20px 0px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;  
+}
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    width: 50%;
+}
+.me {
+    color: #EAB308;
+}
+.navbarlist{
+    display: flex;
+}
+.navbarlist .nav_item:not(:last-child){
+    padding-right: 20px;
+}
+.navbarlist a{
+    text-decoration: none;
+
+    color: #9CA3AF;
+}
+.navbarlist a:hover{
+    color: #fff;
+    transition: all  0.3s ease-in-out;
+}
+.navbarlist .main a{
+    color: #ffffff;
+    font-weight: 700;
+}
+/*  */
+
+/* Introduce */
+.introduce{
+    background-color: #111827;
+    padding: 50px 0px;
+}
+.introduce .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro_left {
+    width: 60%;
+    
+}
+.intro_left .subtitle{
+    color: #EAB308;
+    font-size: 30px;
+}
+.intro_left .title{
+    font-size: 45px;
+    font-weight: 900;
+    padding: 30px 0px;
+}
+.intro_left p{
+    color: #6B7280;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.intro_right {
+    width: 40%;
+    text-align: right;
+}
+.intro_right img{
+    width: 70%;
+    border-radius: 5%;
+}
+/*  */
+
+/* About me */
+.aboutme .container{
+    display: flex;
+    justify-content: space-between;
+    gap: 15%;
+    align-items: center;
+    margin: 50px 0px;
+    padding-top: 50px;
+}
+
+.aboutme .about_left{
+    width: 40%;
+    color: #020617;
+}
+.aboutme .about_left div{
+    border-radius: 24px;
+    border: 16px solid #EAB308;
+    width: 475px;
+    height: 502px;
+
+    position: absolute;
+}
+.aboutme .about_left img{
+    width: 475px;
+    height: 502px;
+    border-radius: 5%;
+    position: relative;
+    left: 50px;
+    top: -50px;
+}
+
+.aboutme .about_right{
+    width: 60%;
+}
+.about_right .title{
+    font-size: 42px;
+    font-weight: 900;
+    padding-bottom: 50px;
+}
+.about_right .title .me {
+    color: #EAB308;
+}
+.about_right p{
+    font-size: 20px;
+    color: #9CA3AF;
+    line-height: 35px;
+}
+
+/* Service  */
+.myService {
+    background-color: #111827;
+    padding: 100px 0px;
+}
+.my_service_title {
+    padding-bottom: 50px;
+    width: 40%;
+}
+.my_service_title h1 {
+    padding-bottom: 30px;
+}
+.my_service_title h1 span {
+    font-size: 40px;
+    font-weight: 700;
+}
+.my_service_title h1 .service_word {
+    color: #EAB308;
+}
+.my_service_title .description{
+    color: #6B7280;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+} 
+
+.my_service {
+
+    margin-top: 20px;
+    background-color: #020617;
+    border-radius: 20px;
+    height: fit-content;
+    width: 100%; 
+    padding: 32px;
+}
+.services{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.service{
+    text-align: center;
+    background-color: #020617;
+    padding: 50px;
+    border-radius: 20px;
+}
+.service h1 {
+    margin: 0px 30px;
+    font-size: 30px;
+    font-weight: 700px;
+    color: white;
+    padding-bottom: 30px;
+}
+.service span{
+    color: #6B7280;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Experience  */
+.myExperience {
+    padding: 100px 0px;
+}
+.exp_title {
+    max-width: 40%;
+    padding-bottom: 50px;
+}
+.exp_title h1 {
+    padding-bottom: 30px;
+}
+.exp_title h1 span {
+    font-size: 40px;
+    font-weight: 700;
+}
+.exp_title h1 .service_word {
+    color: #EAB308;
+}
+.exp_title .description{
+    color: #6B7280;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.exps {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.exp_inner{
+    background-color: #111827;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 0px rgba(255, 255, 255, 0.4);
+    padding: 20px;
+    line-height: 30px;
+}
+.exp_inner h3{
+    font-size: 20px;
+    font-weight: 300;
+}
+.exp_inner h1{
+    font-size: 26px;
+    font-weight: 700;
+    color: #EAB308;
+}
+.exp_inner h4{
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+.exp_inner div{
+    padding: 20px;
+}
+
+/* Form */
+.form {
+    background-color: #111827;
+    padding: 10px
+}
+.form_header{
+    text-align: center;
+    padding: 0 20%;
+}
+.form_header h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+.form_header h1 .form_word {
+    color: #EAB308;
+}
+.form_header .description{
+    color: #6B7280;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.contact-form {
+    width: 100%;
+    margin: 50px auto;
+    border-radius: 8px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #3a3d4d;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #f4b400;
+    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Footer  */
+.footer {
+    padding: 40px 0;
+    text-align: center;
+    color: #f3f3f3;
+    margin: 0px 30%;
+}
+.footer h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 15px;
+}
+.footer p {
+    font-size: 20px;
+    color: #a0a0b1;
+    margin-bottom: 25px;
+}
+.social-icons {
+    margin-top: 20px;   
+}
+.social-icons a {
+    margin: 0 10px;
+    color: #9CA3AF;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: #EAB308;
+}
+.social-icons a:first-child {
+    background-color: #EAB308;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+
+/* AboutMe ----------------------------------------------------------------------- */
+.myAbility {
+    background-color: #111827;
+    padding: 50px 0;
+}
+.myAbility .my_service_title {
+    width: 80%;
+}
+.about_card {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.left-side {
+    width: 40%;
+    height: 100%;
+}
+
+.large-card, .small-card {
+    background-color: #020617;
+    padding: 10%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.large-card h2, .small-card h2 {
+    font-size: 30px;
+    color: #EAB308;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.large-card p, .small-card p {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: justify
+
+}
+
+.right-side {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.small-card {
+    padding: 5% 10%;
+}
+
+.ability_title{
+    padding: 30px 0;
+    text-align: justify;
+}
+.ability_title h1{
+    text-align: center;
+    font-size: 35px;
+    padding: 20px 0;
+}
+.ability_title h1 .word{
+    color: #EAB308;
+}
+.ability_title .description {
+    color: #9CA3AF;
+    font-size: 20px;
+}
+
+
+/* Service ----------------------------------------------------------------------------- */
+.myService {
+    background-color: #111827; 
+    padding: 50px 0; 
+}
+
+.ser_title {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    max-width: 800px; 
+}
+
+.ser_title h1 {
+    padding-bottom: 30px;
+}
+
+.ser_title h1 span {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.ser_title h1 .word {
+    color: #fbbf24; 
+}
+
+.ser_title .description {
+    color: #6B7280; 
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+
+.my_sers {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+.my_service {
+    display: flex;
+    flex-direction: column; 
+    background-color: #020617; 
+    border-radius: 15px;
+    padding: 30px;
+    flex: 1 1 30%; 
+    max-width: 350px; 
+    margin: 0 auto; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.my_service:hover {
+    transform: translateY(-10px); 
+}
+
+.in_ser {
+    margin-top: 20px;
+    text-align: center; 
+}
+
+.my_service h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px; 
+}
+
+.my_service span {
+    color: #d1d5db; 
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.my_service .ser_img img {
+    height: 100px;
+    width: 100%;
+    border-radius: 10px; 
+}
+
+/* PROJECT ---------------------------------------------- */
+.project_title h1{
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.project_title h1 span:last-child{
+    color: #f4b400;
+}
+.project_title div {
+    margin: 0 20%;
+    text-align: justify;
+}
+.project_title .desc{
+    color: #6B7280;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.main_project {
+    display: flex;
+    gap: 10px;
+    padding-top: 30px;
+}
+.main_project .left_project{
+    width: 50%;
+}
+.main_project .left_project img, .main_project .right_project img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.main_project .right_project {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 10px; 
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* RESUME ---------------------------------------------- */
+.resume{
+    background-color: #111827;
+    padding: 50px 0;
+}
+h1.name {
+    font-size: 36px;
+    font-weight: bold;
+    color: #EAB308;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+h2.title {
+    font-size: 28px;
+    color: #3a3d4d;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.contact-info ul, .links ul, .about ul, .education ul, .skills ul, .languages ul, .courses ul, .work-experience ul {
+    margin-bottom: 20px;
+    margin-left: 15px;
+
+}
+
+.education ul, .work-experience ul {
+    margin-left: 15px;
+}
+
+.work-experience ul li ul {
+    margin-left: 15px;
+}
+
+.about, .skills {
+    padding-bottom: 20px;
+}
+
+
+/* Blog -----------------------------------------------  */
+
+/* Blog Section */
+.my_blog {
+    padding: 50px 0;
+    background-color: #111827;
+}
+  
+.blog-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blog-card {
+    background-color: #020617;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 30%;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+}
+
+.blog-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-content h3 {
+    font-size: 1.5rem;
+    color: #eab308;
+    margin-bottom: 15px;
+}
+
+.blog-content p {
+    color: #9ca3af;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    color: #eab308;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #fff;
+}
+
+/* My CV ---------------------------------------------------- */
+.my_cv{
+    background-color: #fff;
+}
+.main_sec {
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 2px;
+    color: black;
+}
+.main_left {
+    flex: 2;
+    border: #020617 solid 2px;
+}
+.main_right {
+    border: #020617 solid 2px;
+    flex: 7;
+}
+/* header  */
+.header_logo img {
+    width: 70px;
+    height: 20%;
+}
+.header_logo span {
+    font-weight: 700;
+}
+/* nav  */
+.cv_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+}
+/* title */
+.cv_title {
+    padding-top: 10px;
+}
+.cv_title span {
+    font-size: 14px;
+    color: #6B7280;
+}
+/* hr */
+hr.divide{
+    height: 3px;
+    background-color: #020617;
+    margin: 5px 0;
+}
+/* project */
+section.projects, section.work_exp{
+    border-radius: 5px;
+}
+.main_left .projects h2, .main_left .proj, .main_left .work_exp h2, 
+.wexp_item, .main_left .education h2
+{
+    border-bottom: solid 1px #020617;
+    padding: 10px 0;
+}
+.projects .project_list .proj, .main_left .wexp_item{
+    background-color:#d1d5db;
+}
+.wexp_inner, .education p, .education ul{
+    padding: 0 20px;
+    text-align: left;
+}
+.main_left .education h2 {
+    margin-bottom: 10px;
+}
+.main_left .review .review_inner{
+    text-align: left;
+    margin: 20px;
+    border: #020617 solid 1px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.main_left .review .review_inner div p {
+    color: #6B7280;
+}
+.main_left .review .review_inner div {
+    padding-top: 10px;
+}
+.main_left .review div:last-child {
+    padding-bottom: 20px;
+}
+
+.main_right .ml_header .header_logo{
+    padding-left: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.header_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.main_right .cv_title{
+    padding-bottom: 50px;
+    border-bottom: #020617 1px solid;
+    border-collapse: collapse;
+}
+.main_right .cv_title h2{
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+
+.multi_sec {
+    display: flex; 
+    border-bottom: 1px solid #020617;
+}
+.sec:first-child {
+    flex: 2
+}
+.sec {
+    flex: 4;
+    border-right: #020617 solid 1px;
+    border-collapse: collapse;
+    text-align: left;
+}
+.sec h2 {
+    padding: 20px;
+}
+.sec .project_list {
+    background-color: none;
+}
+.sec .project_list .proj:not(:last-child){
+    border-bottom: solid 1px #020617;
+    padding: 10px 0;
+}
+.sec .project_list .proj:last-child{
+    padding: 10px 0;
+}
+.sec .project_list .proj p {
+    padding-left: 20px;
+}
+.teacher_review {
+    padding-top: 50px;
+}
+.teacher_review h2 {
+    padding-bottom: 20px;
+}
+.teacher_review .copyright{
+    padding-top: 50px;
+}
+.teacher_review .review_list{
+    display: flex;
+    text-align: left;
+    gap: 10px;
+}
+.teacher_review .review_list .review_inner {
+    border: #020617 1px solid ;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+}
+.teacher_review .review_list .review_inner div{
+    color: #6B7280;
+    padding-top: 10px;
+}
